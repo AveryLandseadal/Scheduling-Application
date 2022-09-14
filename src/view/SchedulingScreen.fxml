@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SchedulingController">
+    <children>
+        <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="491.0" prefHeight="200.0" prefWidth="1032.0">
+            <columns>
+                <TableColumn fx:id="appointmentID" prefWidth="98.0" text="Appointment ID" />
+                <TableColumn fx:id="appCustomerID" prefWidth="85.0" text="Customer ID" />
+                <TableColumn fx:id="userID" prefWidth="75.0" text="User ID" />
+                <TableColumn fx:id="tableContactID" prefWidth="106.0" text="Contact ID" />
+                <TableColumn fx:id="tableTitle" prefWidth="88.0" text="Title" />
+                <TableColumn fx:id="tableDescription" prefWidth="91.0" text="Description" />
+                <TableColumn fx:id="tableLocation" prefWidth="87.0" text="Location" />
+                <TableColumn fx:id="tableType" prefWidth="102.0" text="Type" />
+                <TableColumn fx:id="tableStart" prefWidth="137.0" text="Start" />
+                <TableColumn fx:id="tableEnd" prefWidth="162.0" text="End" />
+            </columns>
+        </TableView>
+        <TableView fx:id="customersTable" layoutX="14.0" layoutY="145.0" prefHeight="200.0" prefWidth="1032.0">
+            <columns>
+                <TableColumn fx:id="tableID" prefWidth="101.0" text="ID" />
+                <TableColumn fx:id="tableName" prefWidth="205.0" text="Name" />
+                <TableColumn fx:id="tableAddress" prefWidth="249.0" text="Address" />
+                <TableColumn fx:id="tablePostal" minWidth="0.0" prefWidth="135.0" text="Postal Code" />
+                <TableColumn fx:id="tablePhone" prefWidth="161.0" text="Phone Number" />
+                <TableColumn fx:id="tableDivision" prefWidth="91.0" text="Division ID" />
+                <TableColumn fx:id="tableCountry" prefWidth="89.0" text="Country" />
+            </columns>
+        </TableView>
+        <Label layoutX="14.0" layoutY="445.0" text="Appointments">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Button fx:id="addCustomerButton" layoutX="575.0" layoutY="365.0" mnemonicParsing="false" onAction="#onActionAddCustomer" text="Add Customer" />
+        <Button fx:id="updateCustomerButton" layoutX="676.0" layoutY="365.0" mnemonicParsing="false" onAction="#onActionUpdateCustomer" text="Update Customer" />
+        <Button fx:id="deleteCustomerButton" layoutX="794.0" layoutY="365.0" mnemonicParsing="false" onAction="#onActionDeleteCustomer" text="Delete Customer" />
+        <Button fx:id="addAppointmentButton" layoutX="519.0" layoutY="706.0" mnemonicParsing="false" onAction="#onActionAddAppointment" text="Add Appointment" />
+        <Button fx:id="updateAppointment" layoutX="638.0" layoutY="706.0" mnemonicParsing="false" onAction="#onActionUpdateAppointment" text="Update Appointment" />
+        <Button layoutX="775.0" layoutY="706.0" mnemonicParsing="false" onAction="#onActionDeleteAppointment" text="Delete Appointment" />
+        <Button layoutX="910.0" layoutY="706.0" mnemonicParsing="false" onAction="#onActionReportButton" text="Reports" />
+        <Label layoutX="432.0" layoutY="42.0" text="Scheduling Screen">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="monthToggle" layoutX="578.0" layoutY="451.0" mnemonicParsing="false" onAction="#onActionFilterByMonth" text="Filter by month" />
+        <RadioButton fx:id="weekToggle" layoutX="703.0" layoutY="451.0" mnemonicParsing="false" onAction="#onActionFilterByWeek" text="Filter by week" />
+        <Button layoutX="873.0" layoutY="447.0" mnemonicParsing="false" onAction="#onActionReset" text="Reset Appointments Table" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="817.0" prefWidth="1209.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <Label fx:id="reportText" layoutX="531.0" layoutY="28.0" text="Reports">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="140.0" text="Report for each contact :" />
+      <Label layoutX="65.0" layoutY="328.0" text="Total appointments per country :" />
+      <ComboBox fx:id="contactComboBox" layoutX="226.0" layoutY="136.0" prefWidth="150.0" />
+      <Button fx:id="buttonUserID" layoutX="227.0" layoutY="362.0" mnemonicParsing="false" onAction="#onActionReportUserID" text="Execute report by UserID" />
+      <Button fx:id="contactButton" layoutX="253.0" layoutY="213.0" mnemonicParsing="false" onAction="#onActionContactReport" text="Execute Report" />
+      <Label accessibleRole="PARENT" layoutX="4.0" layoutY="260.0" prefHeight="17.0" prefWidth="1199.0" text="                                                                                                                                                                                                                                                                                                                                                                            " textAlignment="CENTER" underline="true" />
+      <Label layoutX="4.0" layoutY="406.0" text="                                                                                                                                                                                                                                                                                                                                  " underline="true" />
+      <Button fx:id="backButton" layoutX="526.0" layoutY="689.0" mnemonicParsing="false" onAction="#onActionBackToSchedule" text="Back to Schedule" />
+   </children>
+</AnchorPane>
