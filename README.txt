@@ -11,8 +11,11 @@
     Then under libraries  add the JavaFX lib folder and the mysql connector file if its not already setup.
 
     Under Run / Debug configurations the VM options may need to be setup inorder to get JavaFX working.
+    
     Set the path to where JavaFx is located.
+    
     Example : --module-path="C:\PATH_TO_FX" --add-modules=javafx.fxml,javafx.controls,javafx.graphics
+    
     My current path is : --module-path="C:\Users\Av\Desktop\javafx-sdk-17.0.1\lib" --add-modules=javafx.fxml,javafx.controls,javafx.graphics
 
     In the DAO folder navigate to the JDBC file and update the following if needed :
